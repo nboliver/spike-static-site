@@ -1,0 +1,42 @@
+{
+  "name": "dif",
+  "description": "Decentralized Identity Foundation",
+  "version": "0.0.1",
+  "author": "",
+  "ava": {
+    "verbose": "true"
+  },
+  "bugs": "https://github.com//dif/issues",
+  "dependencies": {
+    "autoprefixer": "^7.2.5",
+    "expose-loader": "^0.7.4",
+    "jquery": "^3.3.1",
+    "node-sass": "^4.7.2",
+    "reshape-standard": "^1.1.0",
+    "sass-loader": "^6.0.6",
+    "spike": "1.3.1",
+    "spike-css-standards": "^1.1.0",
+    "spike-js-standards": "^2.0.2",
+    "webpack": "^2.6.1"
+  },
+  "devDependencies": {
+    "ava": "^0.19.1",
+    "rimraf": "^2.6.1",
+    "snazzy": "^7.0.0",
+    "spike-core": "^1.0.0",
+    "standard": "^10.0.2"
+  },
+  "homepage": "https://github.com//dif",
+  "main": "app.js",
+  "private": true,
+  "repository": "https://github.com//dif",
+  "scripts": {
+    "lint": "standard | snazzy",
+    "precommit": "npm run lint -s",
+    "pretest": "npm run lint -s",
+    "test": "NODE_ENV=test ava",
+    "start": "spike watch",
+    "build": "spike compile",
+    "prod": "NODE_ENV=production spike compile -e production"
+  }
+}
